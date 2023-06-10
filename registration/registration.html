@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="/img/favicon-uas.png" />
+
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="./registration.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Masuk
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Daftar
+          </button>
+        </div>
+
+        <!-- LOGIN / MASUK -->
+        <form id="login" class="input-group">
+          <input type="text" class="inputfield" placeholder="Nama" required />
+          <input
+            type="text"
+            class="inputfield"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" class="checkBox" />
+          <span>Remember Password</span>
+          <button type="submit" class="submit-btn">Masuk</button>
+        </form>
+
+        <!-- SIGN UP / DAFTAR -->
+        <form id="register" class="input-group">
+          <input type="text" class="inputfield" placeholder="Nama" required />
+          <input type="email" class="inputfield" placeholder="Email" required />
+          <input
+            type="email"
+            class="inputfield"
+            placeholder="Masukan Password"
+            required
+          />
+          <input type="checkbox" class="checkBox" />
+          <span>Saya setuju dengan semua Persyaratan</span>
+          <button type="submit" class="submit-btn">Daftar</button>
+        </form>
+
+        <a href="#" class="register-logo">JavaAlcatraz<span>.id</span></a>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      let x = document.getElementById("login");
+      let y = document.getElementById("register");
+      let z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-480px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="/img/favicon-uas.png" />
+
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="/payment/payment.css" />
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1>Info Billing</h1>
+        <h3>
+          Pilih Opsi Pembayaran dan <span> Isi Informasi Yang Sesuai </span>
+        </h3>
+      </div>
+
+      <div class="payment">
+        <a href="#" id="credit-card"
+          ><i data-feather="credit-card"></i>Credit Card</a
+        >
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="container-card">
+        <div class="left">
+          <form>
+            CREDIT CARD NUMBER
+            <input type="text" name="" placeholder="" />
+            <div id="zip">
+              <label>
+                EXPIRED YEAR
+                <select>
+                  <option>Pilih Tahun</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                  <option>2026</option>
+                </select>
+              </label>
+              <label>
+                CVV
+                <input type="number" name="" placeholder="CVV" />
+              </label>
+            </div>
+            NAMA DI KARTU
+            <input type="text" name="" placeholder="" />
+          </form>
+        </div>
+
+        <div class="right">
+          <h1>Detail Pembayaran</h1>
+          <div class="detail-payment">
+            <h2>Discount : <span>Rp. 0</span></h2>
+            <h3>Total Pembayaran : <span>Rp x.xxx.xxx</span></h3>
+          </div>
+          <input type="submit" name="" value="Proceed to Checkout" />
+        </div>
+      </div>
+    </div>
+
+    <!-- feather Icon JS -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
